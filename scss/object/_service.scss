@@ -1,0 +1,32 @@
+/* ------------------- */
+/* topics
+/* ------------------- */
+#topics {
+  padding: 60px 0;
+
+  .topic-contents {
+    width: 65%;
+    margin-left: auto;
+
+    .topic-date {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #cecece;
+    }
+
+    .topic-text {
+      padding: 13px 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 1.4rem;
+      font-weight: bold;
+
+      &:not(:last-of-type) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .link-btn {
+    text-align: right;
+  }
+}
