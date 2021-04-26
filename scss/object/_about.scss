@@ -3,23 +3,35 @@
 /* ------------------- */
 #about {
   margin-bottom: 80px;
+  // background-image: url(../img/about-img@2x-min.jpg);
+  // background-size: cover;
 
   .sec-wrapper {
-    background-image: url(../img/about-img@2x-min.jpg);
-    background-size: cover;
-    padding-top: 110px;
-    padding-left: 50px;
-    height: 607px;
+    padding: 60px 10vw;
 
     .sec-inner {
-      height: 387px;
-      width: 590px;
+      height: 100%;
+      width: 100%;
       background-color: rgba($color: #fff, $alpha: .95);
-      padding: 50px 30px;
+      padding: 50px;
+      position: relative;
 
-      .sec-text {
-        line-height: 2;
-        letter-spacing: normal;
+      .flex-item {
+        .flex-left {
+          width: 60%;
+          .sec-text {
+            line-height: 2;
+            letter-spacing: normal;
+            padding-right: 30px;
+            width: 80%;
+          }
+        }
+
+        .author-image {
+          margin: 0 auto;
+          flex: 1;
+          min-width: 300px;
+        }
       }
     }
   }
