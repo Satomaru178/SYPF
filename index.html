@@ -4,172 +4,154 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mashiro</title>
+  <title>SYPF | SATOSHI YOSHIMURA's PORTFOLIO</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/sy-logo-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script src="js/main.js"></script>
 </head>
+
 <body>
   <header id="header">
-    <div class="header-inner wrapper">
+    <div class="header-inner flex-item">
       <h1 class="header-logo">
-        <a href="#">Shiro</a>
+        <a href="/" class="flex-item">
+          SYPF
+        </a>
       </h1>
-
-      <div class="menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <nav id="nav" class="hidden-menu">
+        <ul class="nav-list">
+          <li class="nav-item logo">
+            <img src="img/sy-logo.png" alt="">
+          </li>
+          <li class="nav-item"><a href="#!">about me</a></li>
+          <li class="nav-item"><a href="#!">concept</a></li>
+          <li class="nav-item"><a href="#!">works</a></li>
+          <li class="nav-item"><a href="#!">service</a></li>
+          <li class="nav-item"><a href="#!">contacty</a></li>
+        </ul>
+      </nav>
+      <div class="mask"></div>
+      <div class="menu-btn flex-item">
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-text">ME<br>NU</div>
       </div>
     </div>
-
-    <ul id="nav">
-      <li><a href="#concept">Concept</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#florist">Florist</a></li>
-      <li><a href="#info">Shop information</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
   </header>
 
-  <div class="top-image">
-    <div class="site-title">
-      <h1>Shiro</h1>
-      <p>White flower shop</p>
-    </div>
-  </div>
-
   <main id="main">
-    <section id="concept">
-      <div class="wrapper">
-        <h2 class="sec-title">Concept</h2>
-        <p class="sec-text">
-          私たちShiroは、白いお花だけを取り扱うフラワーショップです。
-          <br class="pc-only">
-          色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。
-          <br class="pc-only">
-          「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。
-        </p>
-        <img src="img/concept.png" alt="concept-img">
+    <div class="fv">
+      <div class="fv-img img">
+        <img src="img/kv-img@2x-min.jpg" alt="first-view-img">
       </div>
+      <div class="fv-bg-black centering">
+        <div class="fv-copy">
+          <p class="copy-small">
+            web制作で人の笑顔を作る
+          </p>
+          <h2 class="copy-big">
+            satoshi<br>
+            yoshimura's<br>
+            portfolio<br>
+          </h2>
+        </div>
+      </div>
+    </div>
 
-      <div class="bg-gray"></div>
-    </section>
-
-    <section id="work">
-      <div class="wrapper">
-        <h2 class="sec-title">Work</h2>
-        <p class="sec-text">
-          オーダーメイドでのブーケ・アレンジメントのデザインのほか、
-          <br class="pc-only">
-          ウェディングやイベントの装花なども行なっています。
-          <br class="pc-only">
-          一人一人にあったご提案をさせていただきます。
-        </p>
-
-        <div class="flex">
-          <div class="flex-left">
-            <div class="item">
-              <img src="img/work_gift.png" alt="gift-img">
-              <h3>Gift</h3>
-              <p>花束をお送りしたいお相手、伝えたいお気持ちに合わせたプレゼント用花束のアレンジメントをさせていただきます。花言葉などの豆知識もお伝えします。</p>
-            </div>
-            <div class="item">
-              <img src="img/work_wedding.png" alt="wedding-img">
-              <h3>Wedding</h3>
-              <p>ウエディングドレスに合わせたブーケや式場の雰囲気に合う装花をご提案。お打ち合わせの流れや回数、費用などにつきましてはお問い合わせください。</p>
-            </div>
-          </div>
-
-          <div class="flex-right">
-            <div class="item">
-              <img src="img/work_decoretion.png" alt="decoration-img">
-              <h3>Decoration</h3>
-              <p>お写真を彩るお花を一輪から販売。一定期間のご契約で定期的にご自宅へ配送させていただくことも可能です。</p>
-            </div>
-            <div class="item">
-              <img src="img/work_for_yourself.png" alt="for_yourself-img">
-              <h3>For yourself</h3>
-              <p>お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。</p>
-            </div>
+    <section id="about">
+      <div class="sec-wrapper img">
+        <div class="sec-inner">
+          <h2 class="sec-title">about me</h2>
+          <p class="sec-text about-us">
+            DIGSMILEは、デザインで人を笑顔にする会社。<br>
+            なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
+            DIGSMILEの社名にはそんな想いが込められています。
+          </p>
+          <div class="link-btn">
+            <a href="#!">contact</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="florist">
-      <div class="bg-gray"></div>
-
-      <div class="wrapper">
-        <h2 class="sec-title">Florist</h2>
-        <p class="sec-text">
-          Shiro専属のフローリストたちをご紹介。<br class="pc-only">得意の分野であなたのオーダーを最大限に叶えます。
-        </p>
-        <div class="wrapper-items">
-          <ul class="flex">
-            <li class="item">
-              <img src="img/florist_shiyu.png" alt="shiyu-img">
-              <h3 class="item-title">Shiyu</h3>
-              <p class="item-text">お花茶屋大学フラワーアレンジメント科を卒業後、さまざまな白い花を探すために世界を一周し、Shiroの創業者となる。</p>
-            </li>
-            <li class="item">
-              <img src="img/florist_mao.png" alt="mao-img">
-              <h3 class="item-title">Mao</h3>
-              <p class="item-text">お花茶屋大学フラワーアレンジメント科を卒業後、さまざまな白い花を探すために世界を一周し、Shiroの創業者となる。</p>
-            </li>
-            <li class="item">
-              <img src="img/florist_omichan.png" alt="omichan-img">
-              <h3 class="item-title">Omichan</h3>
-              <p class="item-text">お花茶屋大学フラワーアレンジメント科を卒業後、さまざまな白い花を探すために世界を一周し、Shiroの創業者となる。</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="info">
-      <div class="wrapper">
-        <h2 class="sec-title">Shop information</h2>
-        <p class="sec-text">Shiroの店舗情報をご紹介します。</p>
-        <div class="flex">
-          <div class="info-img flex-item">
-            <img src="img/shop_information.png" alt="info-img">
+    <div class="sec-wrapper works_and_culture">
+      <div class="flex-item">
+        <section id="works">
+          <h2 class="sec-title">works</h2>
+          <div class="sec-img works img">
+            <img src="img/works-img@2x-min.jpg" alt="works-img">
           </div>
-          <dl class="detail flex-item">
-            <dt>住所</dt>
-            <dd>〒810-0001 <br>福岡県福岡市中央区天神0-0-0</dd>
-            <dt>電話番号</dt>
-            <dd>0120-000-000</dd>
-            <dt>営業時間</dt>
-            <dd>11:00-20:30 <br>（定休日：水曜日）</dd>
-            <dt>アクセス</dt>
-            <dd>天神駅12a出口から徒歩6分<br>東京駅8b出口から徒歩12分</dd>
-          </dl>
+          <p class="sec-text works">
+            DIGSMILEの制作実績を紹介します。
+          </p>
+          <div class="link-btn">
+            <a href="#!">read more</a>
+          </div>
+        </section>
+
+        <section id="culture">
+          <h2 class="sec-title">culture</h2>
+          <div class="sec-img culture img">
+            <img src="img/culture-img@2x-min.jpg" alt="culture-img">
+          </div>
+          <p class="sec-text culture">
+            DIGSMILEの社内文化について紹介します。
+          </p>
+          <div class="link-btn">
+            <a href="#!">read more</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section id="topics">
+      <div class="sec-wrapper">
+        <h2 class="sec-title">latest topics</h2>
+        <dl class="topic-contents">
+          <dt class="topic-date">2020.02.01</dt>
+          <dd class="topic-text">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</dd>
+          <dt class="topic-date">2020.01.18</dt>
+          <dd class="topic-text">プレスリリースのお知らせ DIGGIN’ RECORDS</dd>
+          <dt class="topic-date">2020.01.01</dt>
+          <dd class="topic-text">新年明けましておめでとうございます</dd>
+        </dl>
+        <div class="link-btn">
+          <a href="#!">read more</a>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="wrapper">
-        <h2 class="sec-title">Contact us</h2>
-        <p class="sec-text">
-          イベントや結婚式でご利用する装花のご相談や、<br class="pc-only">フラワーアレンジメントのご予約などはこちらからお問い合わせください。
-        </p>
-        <a href="mailto:xxxx&#64;xxxx.xxxx.com?subject=お問い合わせ">
-          お問い合わせ
-        </a>
+      <div class="sec-wrapper flex-item">
+        <div class="sec-contents">
+          <h2 class="sec-title">contact</h2>
+          <p class="sec-text">
+            制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>
+            まずはお気軽にご連絡ください。担当者から改めて返信いたします。
+          </p>
+          <div class="link-btn">
+            <a href="#!">read more</a>
+          </div>
+        </div>
+        <div class="sec-img contact img">
+          <img src="img/recruit-img@2x-min.jpg" alt="contact-img">
+        </div>
       </div>
     </section>
   </main>
 
-  <footer id="footer" class="wrapper">
-    <p>Copyright &copy; Shiro All Rights Reserved.</p>
+  <footer id="footer">
+    <p>&copy;2021 DIGSMILE INC.</p>
   </footer>
 </body>
 </html>
