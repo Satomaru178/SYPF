@@ -1,0 +1,109 @@
+/* ------------------- */
+/* header
+/* ------------------- */
+#header {
+  position: relative;
+  z-index: 10;
+
+  .header-inner {
+    position: absolute;
+    width: 100%;
+    max-width: 1440px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 10vw;
+    margin: 0 auto;
+    color: #fff;
+    align-items: center;
+
+    .header-logo {
+      a {
+        font-size: 2.8rem;
+        color: #fff;
+        align-items: baseline;
+        font-weight: 800;
+      }
+    }
+
+    #nav {
+      position: fixed;
+      top: 0;
+      right: -520px;
+      width: 520px;
+      padding: 180px 200px 0;
+      transition: .3s;
+      z-index: 20;
+      opacity: 0;
+      background: #222;
+      height: 100vh;
+
+      a {
+        color: #fff;
+        text-transform: uppercase;
+      }
+    }
+
+    .menu-btn {
+      align-items: center;
+      cursor: pointer;
+
+      .burger-menu {
+        width: 40px;
+        height: 26px;
+        position: relative;
+        top: 0;
+        z-index: 20;
+        margin-right: 7px;
+
+        span {
+          display: block;
+          position: absolute;
+          width: 40px;
+          height: 2px;
+          background-color: #fff;
+          border-radius: 4px;
+          transition: all .3s;
+
+          &:first-child {
+            top: 0;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            top: 12px;
+          }
+
+          &:last-child {
+            bottom: 0;
+          }
+        }
+
+        &.open {
+          span {
+            &:first-child {
+              opacity: 0;
+            }
+
+            &:nth-child(2) {
+              transform: rotate(45deg);
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-45deg);
+            }
+
+            &:last-child {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      .menu-text {
+        font-size: 1.6rem;
+        font-weight: 800;
+      }
+    }
+  }
+}
