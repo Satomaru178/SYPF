@@ -14,6 +14,7 @@
   font-weight: 800;
   margin-bottom: 30px;
   text-transform: uppercase;
+  color: cl(text);
 }
 
 .sec-text {
@@ -32,9 +33,9 @@
   a {
     text-transform: uppercase;
     text-align: center;
-    background-color: #222;
+    background-color: cl(tblue);
     width: 160px;
-    color: #fff;
+    color: cl(beige);
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 3.6rem;
