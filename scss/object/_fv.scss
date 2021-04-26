@@ -3,13 +3,16 @@
 /* ------------------- */
 .fv {
   height: 100vh;
+  max-height: 900px;
   width: 100%;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   position: relative;
-  padding: 5vw;
+  background-color: cl(white);
+  box-sizing: content-box;
 
   .fv-img {
     width: percentage(1100px / 1440px);
+    max-width: 1200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +21,8 @@
 
   .fv-bg-black {
     width: percentage(780px / 1440px);
-    height: 100vh;
+    height: 100%;
+    max-height: 780px;
     background-color: cl(base);
     position: absolute;
     top: 0;
