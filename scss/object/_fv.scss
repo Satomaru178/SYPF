@@ -1,0 +1,44 @@
+/* ------------------- */
+/* first-view
+/* ------------------- */
+.fv {
+  height: 740px;
+  width: 100%;
+  margin-bottom: 120px;
+  position: relative;
+
+  .fv-img {
+    height: 640px;
+    width: 1100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .fv-bg-black {
+    width: 780px;
+    height: 740px;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .fv-copy {
+    color: #fff;
+    z-index: 3;
+    text-transform: uppercase;
+
+    .copy-small {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .copy-big {
+      font-size: 7.2rem;
+      font-weight: 800;
+    }
+  }
+}
