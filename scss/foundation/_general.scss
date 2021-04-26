@@ -3,21 +3,15 @@
 /* ------------------- */
 html {
   font-size: 62.5%;
+  color: cl(text);
 }
 
 body {
-  font-family:
-    'Montserrat',
-    "游ゴシック体",
-    YuGothic,
-    "游ゴシック Medium",
-    "Yu Gothic Medium",
-    "游ゴシック",
-    "Yu Gothic",
-    sans-serif;
+  @include Montserrat;
   letter-spacing: 0.05em;
   margin: 0 auto;
   font-size: 1.4em;
+  // background-color: cl(beige);
 }
 
 img {
