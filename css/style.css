@@ -30,6 +30,19 @@ body {
   font-size: 1.4em;
 }
 
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url(/img/palm-tree.jpg) center no-repeat;
+  background-size: cover;
+}
+
 img {
   width: 100%;
 }
@@ -58,7 +71,6 @@ li {
 .sec-wrapper {
   width: 100%;
   margin: 0 auto;
-  max-width: 1100px;
 }
 
 .sec-title {
@@ -133,11 +145,10 @@ li {
 #header .header-inner {
   position: absolute;
   width: 100%;
-  max-width: 1440px;
   top: 0;
   left: 0;
   right: 0;
-  padding: 30px 10vw;
+  padding: 50px 5vw;
   margin: 0 auto;
   color: #F2E8DC;
   -webkit-box-align: center;
@@ -243,23 +254,34 @@ li {
 }
 
 #about .sec-wrapper {
-  background-image: url(../img/about-img@2x-min.jpg);
-  background-size: cover;
-  padding-top: 110px;
-  padding-left: 50px;
-  height: 607px;
+  padding: 60px 10vw;
 }
 
 #about .sec-wrapper .sec-inner {
-  height: 387px;
-  width: 590px;
+  height: 100%;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 50px 30px;
+  padding: 50px;
+  position: relative;
 }
 
-#about .sec-wrapper .sec-inner .sec-text {
+#about .sec-wrapper .sec-inner .flex-item .flex-left {
+  width: 60%;
+}
+
+#about .sec-wrapper .sec-inner .flex-item .flex-left .sec-text {
   line-height: 2;
   letter-spacing: normal;
+  padding-right: 30px;
+  width: 80%;
+}
+
+#about .sec-wrapper .sec-inner .flex-item .author-image {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 300px;
 }
 
 /* ------------------- */
@@ -296,14 +318,18 @@ li {
 /* ------------------- */
 .fv {
   height: 100vh;
+  max-height: 900px;
   width: 100%;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   position: relative;
-  padding: 5vw;
+  background-color: #fff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .fv .fv-img {
   width: 76.38889%;
+  max-width: 1200px;
   position: absolute;
   top: 0;
   left: 0;
@@ -312,7 +338,8 @@ li {
 
 .fv .fv-bg-black {
   width: 54.16667%;
-  height: 100vh;
+  height: 100%;
+  max-height: 780px;
   background-color: #011526;
   position: absolute;
   top: 0;
