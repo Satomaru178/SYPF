@@ -1,0 +1,52 @@
+// COLORS
+// @inlcude cl(black);
+//--------------------------------------------------
+
+$colors: (
+	white: #fff,
+	black: #000,
+	text: #333333,
+  primary: #8C162C,
+  red: #BF2441,
+  base: #011526,
+  tblue: #4E8DA6,
+  beige: #F2E8DC
+);
+
+@function cl($key) {
+	@return map-get($colors, $key);
+}
+
+// FONT
+// @inlcude TimesNewRoman;
+//--------------------------------------------------
+
+@mixin Montserrat {
+	font-family: 'Montserrat',"游ゴシック体",YuGothic,"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",sans-serif;
+}
+
+// RESPONSIVE
+// @include overTab
+//--------------------------------------------------
+
+@mixin overTab {
+	@media print,screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+// UTILITY
+//--------------------------------------------------
+
+._sp {
+	@include overTab {
+		display: none;
+	}
+}
+
+._pc {
+	display: none;
+	@include overTab {
+		display: block;
+	}
+}
