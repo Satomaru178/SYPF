@@ -1,0 +1,26 @@
+/* ------------------- */
+/* about
+/* ------------------- */
+#about {
+  margin-bottom: 80px;
+
+  .sec-wrapper {
+    background-image: url(../img/about-img@2x-min.jpg);
+    background-size: cover;
+    padding-top: 110px;
+    padding-left: 50px;
+    height: 607px;
+
+    .sec-inner {
+      height: 387px;
+      width: 590px;
+      background-color: rgba($color: #fff, $alpha: .95);
+      padding: 50px 30px;
+
+      .sec-text {
+        line-height: 2;
+        letter-spacing: normal;
+      }
+    }
+  }
+}
