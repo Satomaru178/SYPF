@@ -1,0 +1,26 @@
+/* ------------------- */
+/* contact
+/* ------------------- */
+#contact {
+  padding: 60px 0 120px;
+
+  .sec-wrapper {
+    align-items: center;
+
+    .sec-contents {
+      width: 50%;
+      padding-right: 80px;
+      font-size: 1.6rem;
+
+      .sec-text {
+        line-height: 2;
+        letter-spacing: normal;
+      }
+    }
+
+    .sec-img {
+      height: 390px;
+      width: 580px;
+    }
+  }
+}
