@@ -14,13 +14,13 @@
     right: 0;
     padding: 30px 10vw;
     margin: 0 auto;
-    color: #fff;
+    color: cl(beige);
     align-items: center;
 
     .header-logo {
       a {
         font-size: 2.8rem;
-        color: #fff;
+        color: cl(beige);
         align-items: baseline;
         font-weight: 800;
       }
@@ -39,7 +39,7 @@
       height: 100vh;
 
       a {
-        color: #fff;
+        color: cl(beige);
         text-transform: uppercase;
       }
     }
@@ -61,7 +61,7 @@
           position: absolute;
           width: 40px;
           height: 2px;
-          background-color: #fff;
+          background-color: cl(beige);
           border-radius: 4px;
           transition: all .3s;
 
