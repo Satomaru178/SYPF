@@ -1,1 +1,364 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* ------------------- */
+/* general
+/* ------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  letter-spacing: 0.05em;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.sec-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.sec-text {
+  line-height: 2;
+}
+
+.sec-text p:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.link-btn {
+  margin-top: 30px;
+}
+
+.link-btn a {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #222;
+  width: 160px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  display: inline-block;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.link-btn a:hover {
+  opacity: .7;
+}
+
+.centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ------------------- */
+/* footer
+/* ------------------- */
+#footer {
+  background-color: #525252;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* ------------------- */
+/* header
+/* ------------------- */
+#header {
+  position: relative;
+  z-index: 10;
+}
+
+#header .header-inner {
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 10vw;
+  margin: 0 auto;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header-inner .header-logo a {
+  font-size: 2.8rem;
+  color: #fff;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-weight: 800;
+}
+
+#header .header-inner #nav {
+  position: fixed;
+  top: 0;
+  right: -520px;
+  width: 520px;
+  padding: 180px 200px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 20;
+  opacity: 0;
+  background: #222;
+  height: 100vh;
+}
+
+#header .header-inner #nav a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#header .header-inner .menu-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#header .header-inner .menu-btn .burger-menu {
+  width: 40px;
+  height: 26px;
+  position: relative;
+  top: 0;
+  z-index: 20;
+  margin-right: 7px;
+}
+
+#header .header-inner .menu-btn .burger-menu span {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#header .header-inner .menu-btn .burger-menu span:first-child {
+  top: 0;
+}
+
+#header .header-inner .menu-btn .burger-menu span:nth-child(2), #header .header-inner .menu-btn .burger-menu span:nth-child(3) {
+  top: 12px;
+}
+
+#header .header-inner .menu-btn .burger-menu span:last-child {
+  bottom: 0;
+}
+
+#header .header-inner .menu-btn .burger-menu.open span:first-child {
+  opacity: 0;
+}
+
+#header .header-inner .menu-btn .burger-menu.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#header .header-inner .menu-btn .burger-menu.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#header .header-inner .menu-btn .burger-menu.open span:last-child {
+  opacity: 0;
+}
+
+#header .header-inner .menu-btn .menu-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+/* ------------------- */
+/* about
+/* ------------------- */
+#about {
+  margin-bottom: 80px;
+}
+
+#about .sec-wrapper {
+  background-image: url(../img/about-img@2x-min.jpg);
+  background-size: cover;
+  padding-top: 110px;
+  padding-left: 50px;
+  height: 607px;
+}
+
+#about .sec-wrapper .sec-inner {
+  height: 387px;
+  width: 590px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 50px 30px;
+}
+
+#about .sec-wrapper .sec-inner .sec-text {
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+/* ------------------- */
+/* contact
+/* ------------------- */
+#contact {
+  padding: 60px 0 120px;
+}
+
+#contact .sec-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .sec-wrapper .sec-contents {
+  width: 50%;
+  padding-right: 80px;
+  font-size: 1.6rem;
+}
+
+#contact .sec-wrapper .sec-contents .sec-text {
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+#contact .sec-wrapper .sec-img {
+  height: 390px;
+  width: 580px;
+}
+
+/* ------------------- */
+/* first-view
+/* ------------------- */
+.fv {
+  height: 740px;
+  width: 100%;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.fv .fv-img {
+  height: 640px;
+  width: 1100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.fv .fv-bg-black {
+  width: 780px;
+  height: 740px;
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fv .fv-copy {
+  color: #fff;
+  z-index: 3;
+  text-transform: uppercase;
+}
+
+.fv .fv-copy .copy-small {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.fv .fv-copy .copy-big {
+  font-size: 7.2rem;
+  font-weight: 800;
+}
+
+/* ------------------- */
+/* topics
+/* ------------------- */
+#topics {
+  padding: 60px 0;
+}
+
+#topics .topic-contents {
+  width: 65%;
+  margin-left: auto;
+}
+
+#topics .topic-contents .topic-date {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cecece;
+}
+
+#topics .topic-contents .topic-text {
+  padding: 13px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#topics .topic-contents .topic-text:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+
+#topics .link-btn {
+  text-align: right;
+}
+
+/* ------------------- */
+/* works&culture
+/* ------------------- */
+.works_and_culture {
+  margin-bottom: 60px;
+}
+
+.works_and_culture .sec-img {
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=style.css.map */
