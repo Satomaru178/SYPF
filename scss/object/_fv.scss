@@ -2,14 +2,14 @@
 /* first-view
 /* ------------------- */
 .fv {
-  height: 740px;
+  height: 100vh;
   width: 100%;
   margin-bottom: 120px;
   position: relative;
+  padding: 5vw;
 
   .fv-img {
-    height: 640px;
-    width: 1100px;
+    width: percentage(1100px / 1440px);
     position: absolute;
     top: 0;
     left: 0;
@@ -17,9 +17,9 @@
   }
 
   .fv-bg-black {
-    width: 780px;
-    height: 740px;
-    background-color: #222;
+    width: percentage(780px / 1440px);
+    height: 100vh;
+    background-color: cl(base);
     position: absolute;
     top: 0;
     right: 0;
