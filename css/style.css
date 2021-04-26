@@ -1,13 +1,30 @@
 @charset "UTF-8";
+@media print, screen and (min-width: 768px) {
+  ._sp {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  ._pc {
+    display: block;
+  }
+}
+
 /* ------------------- */
 /* general
 /* ------------------- */
 html {
   font-size: 62.5%;
+  color: #333333;
 }
 
 body {
-  font-family: 'Montserrat', "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: 'Montserrat',"游ゴシック体",YuGothic,"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",sans-serif;
   letter-spacing: 0.05em;
   margin: 0 auto;
   font-size: 1.4em;
@@ -49,6 +66,7 @@ li {
   font-weight: 800;
   margin-bottom: 30px;
   text-transform: uppercase;
+  color: #333333;
 }
 
 .sec-text {
@@ -66,9 +84,9 @@ li {
 .link-btn a {
   text-transform: uppercase;
   text-align: center;
-  background-color: #222;
+  background-color: #4E8DA6;
   width: 160px;
-  color: #fff;
+  color: #F2E8DC;
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 3.6rem;
@@ -97,10 +115,10 @@ li {
 /* footer
 /* ------------------- */
 #footer {
-  background-color: #525252;
+  background-color: #011526;
   text-align: center;
   padding: 20px 0;
-  color: #fff;
+  color: #F2E8DC;
   font-size: 1rem;
 }
 
@@ -121,7 +139,7 @@ li {
   right: 0;
   padding: 30px 10vw;
   margin: 0 auto;
-  color: #fff;
+  color: #F2E8DC;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -129,7 +147,7 @@ li {
 
 #header .header-inner .header-logo a {
   font-size: 2.8rem;
-  color: #fff;
+  color: #F2E8DC;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -151,7 +169,7 @@ li {
 }
 
 #header .header-inner #nav a {
-  color: #fff;
+  color: #F2E8DC;
   text-transform: uppercase;
 }
 
@@ -176,7 +194,7 @@ li {
   position: absolute;
   width: 40px;
   height: 2px;
-  background-color: #fff;
+  background-color: #F2E8DC;
   border-radius: 4px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -277,15 +295,15 @@ li {
 /* first-view
 /* ------------------- */
 .fv {
-  height: 740px;
+  height: 100vh;
   width: 100%;
   margin-bottom: 120px;
   position: relative;
+  padding: 5vw;
 }
 
 .fv .fv-img {
-  height: 640px;
-  width: 1100px;
+  width: 76.38889%;
   position: absolute;
   top: 0;
   left: 0;
@@ -293,9 +311,9 @@ li {
 }
 
 .fv .fv-bg-black {
-  width: 780px;
-  height: 740px;
-  background-color: #222;
+  width: 54.16667%;
+  height: 100vh;
+  background-color: #011526;
   position: absolute;
   top: 0;
   right: 0;
