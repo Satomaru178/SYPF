@@ -502,7 +502,7 @@ li {
 }
 
 #service .sec-wrapper .sec-inner .service-list .list-item {
-  width: 33%;
+  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,17 +529,7 @@ li {
   font-size: 1.6rem;
 }
 
-#service .sec-wrapper .sec-inner .service-list .list-item .text-box .item-text span {
-  text-decoration: underline;
-}
-
-#service .sec-wrapper .sec-inner .service-list .list-item .text-box span {
-  color: #BF2441;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-#service .sec-wrapper .sec-inner .service-list .list-item .concept-img {
+#service .sec-wrapper .sec-inner .service-list .list-item .service-img {
   height: 100px;
   width: 100px;
   margin: 0 auto 20px;
