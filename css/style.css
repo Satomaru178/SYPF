@@ -74,16 +74,58 @@ li {
   padding: 40px 3vw;
 }
 
-.sec-title {
-  font-size: 3.2rem;
-  font-weight: 800;
+.title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 30px;
-  text-transform: uppercase;
   color: #333333;
 }
 
-.sec-title.right {
-  text-align: right;
+.title-box .sec-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-right: 1em;
+}
+
+.title-box .sub-title {
+  font-size: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-box .sub-title:before, .title-box .sub-title:after {
+  border-top: 1px solid;
+  content: "";
+  width: .5em;
+}
+
+.title-box .sub-title:before {
+  margin-right: .5em;
+}
+
+.title-box .sub-title:after {
+  margin-left: .5em;
+}
+
+.title-box.right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.title-box.right .sec-title {
+  margin-right: 0;
+  margin-left: 1em;
 }
 
 .sec-text {
@@ -309,17 +351,30 @@ li {
   background-color: lightgray;
 }
 
+#concept .sec-wrapper .concept-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#concept .sec-wrapper .concept-list .list-item {
+  width: 33%;
+}
+
+#concept .sec-wrapper .concept-list .list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* ------------------- */
 /* contact
 /* ------------------- */
 #contact {
-  padding: 60px 0 120px;
+  background-color: #F2E8DC;
+  margin-bottom: 30px;
 }
 
 #contact .sec-wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 60px 10vw;
 }
 
 #contact .sec-wrapper .sec-contents {
@@ -445,13 +500,13 @@ li {
 }
 
 /* ------------------- */
-/* works&culture
+/* works
 /* ------------------- */
-.works_and_culture {
-  margin-bottom: 60px;
+#works {
+  background-color: #F2E8DC;
 }
 
-.works_and_culture .sec-img {
-  padding-bottom: 30px;
+#works .sec-wrapper {
+  padding: 60px 10vw;
 }
 /*# sourceMappingURL=style.css.map */
