@@ -15,11 +15,17 @@
       .flex-item {
         .flex-left {
           width: 60%;
-          .sec-text {
-            line-height: 2;
-            letter-spacing: normal;
-            padding-right: 30px;
-            // width: 80%;
+          .about {
+            line-height: 1.7;
+            font-size: 1.6rem;
+            .name {
+              font-weight: bold;
+            }
+            p {
+              &:not(:last-of-type) {
+                margin-bottom: 15px;
+              }
+            }
           }
         }
 
@@ -27,9 +33,6 @@
           margin: 0 auto;
           flex: 1;
           text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           img {
             width: 250px;
             border-radius: 50%;
