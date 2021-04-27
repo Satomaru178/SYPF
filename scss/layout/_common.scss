@@ -9,14 +9,41 @@
   padding: 40px 3vw;
 }
 
-.sec-title {
-  font-size: 3.2rem;
-  font-weight: 800;
+.title-box {
+  display: flex;
+  justify-content: flex-start;
   margin-bottom: 30px;
-  text-transform: uppercase;
   color: cl(text);
+  .sec-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  //  text-transform: capitalize;
+    margin-right: 1em;
+  }
+  .sub-title {
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    &:before,
+    &:after {
+      border-top: 1px solid;
+      content: "";
+      width: .5em;
+    }
+    &:before {
+      margin-right: .5em;
+    }
+    &:after {
+      margin-left: .5em;
+    }
+  }
   &.right {
-    text-align: right;
+    flex-direction: row-reverse;
+    .sec-title {
+      margin-right: 0;
+      margin-left: 1em;
+    }
   }
 }
 
