@@ -2,17 +2,17 @@
 /* first-view
 /* ------------------- */
 .fv {
-  height: 100vh;
-  max-height: 900px;
+  height: 800px;
+  max-height: 800px;
   width: 100%;
-  padding-bottom: 120px;
   position: relative;
-  background-color: cl(white);
+  background-color: cl(beige);
   box-sizing: content-box;
+  padding-bottom: 60px;
 
   .fv-img {
     width: percentage(1100px / 1440px);
-    max-width: 1200px;
+    max-width: 1100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -21,8 +21,10 @@
 
   .fv-bg-black {
     width: percentage(780px / 1440px);
+    min-width: 600px;
     height: 100%;
-    max-height: 780px;
+    max-height: 740px;
+    min-height: 500px;
     background-color: cl(base);
     position: absolute;
     top: 0;
