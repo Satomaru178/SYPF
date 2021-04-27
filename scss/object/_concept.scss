@@ -5,5 +5,14 @@
     height: 400px;
     width: 100%;
     background-color: lightgray;
+    .concept-list {
+      justify-content: center;
+      .list-item {
+        width: 33%;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }
