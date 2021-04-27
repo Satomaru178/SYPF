@@ -2,18 +2,14 @@
 /* about
 /* ------------------- */
 #about {
-  margin-bottom: 80px;
-  // background-image: url(../img/about-img@2x-min.jpg);
-  // background-size: cover;
 
   .sec-wrapper {
-    padding: 60px 10vw;
-
+      padding: 60px 10vw;
     .sec-inner {
       height: 100%;
       width: 100%;
-      background-color: rgba($color: #fff, $alpha: .95);
-      padding: 50px;
+      background-color: rgba($color: cl(beige), $alpha: .95);
+      padding: 40px 3vw;
       position: relative;
 
       .flex-item {
@@ -23,14 +19,21 @@
             line-height: 2;
             letter-spacing: normal;
             padding-right: 30px;
-            width: 80%;
+            // width: 80%;
           }
         }
 
         .author-image {
           margin: 0 auto;
           flex: 1;
-          min-width: 300px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 250px;
+            border-radius: 50%;
+          }
         }
       }
     }
