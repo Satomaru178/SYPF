@@ -6,7 +6,7 @@
 .sec-wrapper {
   width: 100%;
   margin: 0 auto;
-  // max-width: 1100px;
+  padding: 40px 3vw;
 }
 
 .sec-title {
@@ -15,6 +15,9 @@
   margin-bottom: 30px;
   text-transform: uppercase;
   color: cl(text);
+  &.right {
+    text-align: right;
+  }
 }
 
 .sec-text {
