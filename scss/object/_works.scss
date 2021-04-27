@@ -1,10 +1,9 @@
 /* ------------------- */
-/* works&culture
+/* works
 /* ------------------- */
-.works_and_culture {
-  margin-bottom: 60px;
-
-  .sec-img {
-    padding-bottom: 30px;
+#works {
+  background-color: cl(beige);
+  .sec-wrapper {
+    padding: 60px 10vw;
   }
 }
