@@ -6,6 +6,7 @@
     background-color: lightgray;
     .concept-list {
       justify-content: center;
+      padding-top: 20px;
       .list-item {
         width: 33%;
         display: flex;
@@ -18,11 +19,11 @@
 
           .item-title {
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 2.8rem;
             margin-bottom: 20px;
           }
           .item-text {
-            font-size: 1.2em;
+            font-size: 1.6rem;
             span {
               text-decoration: underline;
             }
