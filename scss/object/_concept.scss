@@ -2,15 +2,41 @@
   background-color: cl(beige);
   padding: 60px 10vw;
   .sec-wrapper {
-    height: 400px;
     width: 100%;
     background-color: lightgray;
     .concept-list {
       justify-content: center;
       .list-item {
         width: 33%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
         &:not(:last-child) {
           margin-right: 10px;
+        }
+        .text-box {
+
+          .item-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+          }
+          .item-text {
+            font-size: 1.2em;
+            span {
+              text-decoration: underline;
+            }
+          }
+          span {
+            color: cl(red);
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+        }
+        .concept-img {
+          height: 100px;
+          width: 100px;
+          margin: 0 auto 20px;
         }
       }
     }
