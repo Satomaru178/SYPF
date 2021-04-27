@@ -18,6 +18,10 @@
 /* ------------------- */
 /* general
 /* ------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
 html {
   font-size: 62.5%;
   color: #333333;
@@ -86,7 +90,7 @@ li {
 }
 
 .title-box .sec-title {
-  font-size: 3.2rem;
+  font-size: 3.2em;
   font-weight: 800;
   text-transform: uppercase;
   margin-right: 1em;
@@ -346,7 +350,6 @@ li {
 }
 
 #concept .sec-wrapper {
-  height: 400px;
   width: 100%;
   background-color: lightgray;
 }
@@ -359,10 +362,46 @@ li {
 
 #concept .sec-wrapper .concept-list .list-item {
   width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #concept .sec-wrapper .concept-list .list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+#concept .sec-wrapper .concept-list .list-item .text-box .item-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+#concept .sec-wrapper .concept-list .list-item .text-box .item-text {
+  font-size: 1.2em;
+}
+
+#concept .sec-wrapper .concept-list .list-item .text-box .item-text span {
+  text-decoration: underline;
+}
+
+#concept .sec-wrapper .concept-list .list-item .text-box span {
+  color: #BF2441;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#concept .sec-wrapper .concept-list .list-item .concept-img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 20px;
 }
 
 /* ------------------- */
