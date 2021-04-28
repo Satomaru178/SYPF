@@ -43,7 +43,7 @@ body:before {
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background: url(/img/palm-tree.jpg) center no-repeat;
+  background: url(/img/background-ocean.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -297,19 +297,20 @@ li {
 /* about
 /* ------------------- */
 #about .sec-wrapper {
-  padding: 60px 10vw;
+  padding: 60px 5vw;
 }
 
 #about .sec-wrapper .sec-inner {
   height: 100%;
   width: 100%;
   background-color: rgba(242, 232, 220, 0.95);
-  padding: 40px 3vw;
+  padding: 40px 10vw;
   position: relative;
 }
 
 #about .sec-wrapper .sec-inner .flex-item .flex-left {
   width: 60%;
+  margin-right: 20px;
 }
 
 #about .sec-wrapper .sec-inner .flex-item .flex-left .about {
@@ -334,13 +335,14 @@ li {
 }
 
 #about .sec-wrapper .sec-inner .flex-item .author-image img {
-  width: 250px;
+  min-width: 200px;
+  max-width: 300px;
   border-radius: 50%;
 }
 
 #concept {
   background-color: #F2E8DC;
-  padding: 60px 10vw;
+  padding: 60px 5vw;
 }
 
 #concept .sec-wrapper {
@@ -380,7 +382,7 @@ li {
 }
 
 #concept .sec-wrapper .concept-list .list-item .text-box .item-text {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 #concept .sec-wrapper .concept-list .list-item .text-box .item-text span {
@@ -408,7 +410,7 @@ li {
 }
 
 #contact .sec-wrapper {
-  padding: 60px 10vw;
+  padding: 60px 15vw;
 }
 
 #contact .sec-wrapper .sec-contents {
@@ -483,7 +485,7 @@ li {
 /* service
 /* ------------------- */
 #service .sec-wrapper {
-  padding: 60px 10vw;
+  padding: 60px 5vw;
 }
 
 #service .sec-wrapper .sec-inner {
