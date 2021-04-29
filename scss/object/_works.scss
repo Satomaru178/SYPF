@@ -2,85 +2,91 @@
 /* works
 /* ------------------- */
 #works {
-  background-color: cl(beige);
+
   .sec-wrapper {
-    padding: 60px 10vw;
-    .works-list {
-      .item-list {
-        position: relative;
-        overflow: hidden;
-        &:not(:last-of-type) {
-          margin-right: 20px;
-        }
-        a {
-          display: inline-block;
-          color: cl(white);
-          dl {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            margin: 0;
-            padding: 20px;
-            background: rgba($color: cl(tblue), $alpha: .95);
-            overflow: hidden;
-            background: transparent;
-            &::before,
-            &::after {
-              content: "";
-              display: block;
+    padding: 60px 5vw;
+
+    .sec-inner {
+      background-color: rgba($color: cl(beige), $alpha: .95);
+      padding: 40px 3vw;
+
+      .works-list {
+        .item-list {
+          position: relative;
+          overflow: hidden;
+          &:not(:last-of-type) {
+            margin-right: 20px;
+          }
+          a {
+            display: inline-block;
+            color: cl(white);
+            dl {
+              height: 100%;
+              width: 100%;
               position: absolute;
               top: 0;
-              width: 50%;
-              height: 100%;
+              margin: 0;
+              padding: 20px;
               background: rgba($color: cl(tblue), $alpha: .95);
-              transition: opacity .3s,
-              transform .3s cubic-bezier(0.215, 0.61, 0.355, 1);
-            }
-            &::before {
-              left: 0;
-            }
-            &::after {
-              right: 0;
-            }
-            dt,
-            dd {
-              position: relative;
-              z-index: 1;
-              transition: opacity .3s .3s;
-            }
-            dt {
-              margin-bottom: 10px;
-              font-weight: bold;
-              font-size: 2rem;
-            }
-            dd {
-              font-size: 1.6rem;
-              margin-bottom: 20px;
-              text-align: right;
-              &.center {
-                text-align: center;
+              overflow: hidden;
+              background: transparent;
+              &::before,
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 50%;
+                height: 100%;
+                background: rgba($color: cl(tblue), $alpha: .95);
+                transition: opacity .3s,
+                transform .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+              }
+              &::before {
+                left: 0;
+              }
+              &::after {
+                right: 0;
+              }
+              dt,
+              dd {
+                position: relative;
+                z-index: 1;
+                transition: opacity .3s .3s;
+              }
+              dt {
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-size: 2rem;
+              }
+              dd {
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+                text-align: right;
+                &.center {
+                  text-align: center;
+                }
               }
             }
           }
-        }
-        &:not(:hover) {
-          dd,
-          dt {
-            opacity: 0;
-            transition-delay: 0s;
-          }
-          dl {
-            &::before,
-            &::after {
+          &:not(:hover) {
+            dd,
+            dt {
               opacity: 0;
-              transition-duration: .6s;
+              transition-delay: 0s;
             }
-            &::before {
-              transform: translateX(-175px) skew(-30deg);
-            }
-            &::after {
-              transform: translateX(275px) skew(-30deg);
+            dl {
+              &::before,
+              &::after {
+                opacity: 0;
+                transition-duration: .6s;
+              }
+              &::before {
+                transform: translateX(-175px) skew(-30deg);
+              }
+              &::after {
+                transform: translateX(275px) skew(-30deg);
+              }
             }
           }
         }
