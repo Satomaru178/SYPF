@@ -2,24 +2,29 @@
 /* contact
 /* ------------------- */
 #contact {
-  background-color: cl(beige);
   margin-bottom: 50px;
 
   .sec-wrapper {
-    padding: 60px 15vw;
+    padding: 60px 5vw;
 
-    .sec-contents {
-      // align-items: center;
-      .flex-left {
-        width: 80%;
-        margin-right: 40px;
-        font-size: 2rem;
-        .sec-text {
-          line-height: 2;
-          letter-spacing: normal;
+    .sec-inner {
+      background-color: rgba($color: cl(beige), $alpha: .95);
+      padding: 40px 3vw;
+
+      .sec-contents {
+        .flex-left {
+          width: 50%;
+          margin-right: 40px;
+          font-size: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .sec-text {
+            line-height: 2;
+            letter-spacing: normal;
+          }
         }
       }
-
     }
   }
 }
