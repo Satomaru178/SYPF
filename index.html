@@ -15,26 +15,29 @@
 </head>
 
 <body>
+  <!-- header -->
   <header id="header">
     <div class="header-inner flex-item">
       <h1 class="header-logo">
-        <a href="/" class="flex-item">
+        <a href="#" class="flex-item">
           SYPF
         </a>
       </h1>
       <nav id="nav" class="hidden-menu">
         <ul class="nav-list">
           <li class="nav-item logo">
-            <img src="img/sy-logo.png" alt="このサイトのロゴマーク">
+            <a href="#">
+              <img src="img/sy-logo.png" alt="このサイトのロゴマーク">
+            </a>
           </li>
-          <li class="nav-item"><a href="#!">about me</a></li>
-          <li class="nav-item"><a href="#!">concept</a></li>
-          <li class="nav-item"><a href="#!">works</a></li>
-          <li class="nav-item"><a href="#!">service</a></li>
-          <li class="nav-item"><a href="#!">contacty</a></li>
+          <li class="nav-item"><a href="#about">about me</a></li>
+          <li class="nav-item"><a href="#concept">concept</a></li>
+          <li class="nav-item"><a href="#works">works</a></li>
+          <li class="nav-item"><a href="#service">service</a></li>
+          <li class="nav-item"><a href="#contact">contact</a></li>
         </ul>
       </nav>
-      <div class="mask"></div>
+      <div id="mask"></div>
       <div class="menu-btn flex-item">
         <div class="burger-menu">
           <span></span>
@@ -42,30 +45,34 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-text">ME<br>NU</div>
+        <div class="menu-text">ME<br class="only-pc">NU</div>
       </div>
     </div>
   </header>
+  <!-- /header -->
 
-  <main id="main">
-    <div class="fv">
-      <div class="fv-img img">
-        <img src="img/fv-image.jpg" alt="ビールとビーチ">
-      </div>
-      <div class="fv-bg-black centering">
-        <div class="fv-copy">
-          <p class="copy-small">
-            web制作で人の笑顔を作る
-          </p>
-          <h2 class="copy-big">
-            satoshi<br>
-            yoshimura's<br>
-            portfolio<br>
-          </h2>
-        </div>
+  <!-- fv -->
+  <div class="fv">
+    <div class="bg-wrapper">
+      <div class="fv-copy">
+        <p class="copy-small">
+          web制作で人の笑顔を作る
+        </p>
+        <p class="copy-mid">
+          satoshi yoshimura's
+        </p>
+        <h2 class="copy-big">
+          port<br>
+          folio<br>
+          site.<br>
+        </h2>
       </div>
     </div>
+  </div>
+  <!-- /fv -->
 
+  <!-- main -->
+  <main id="main">
     <section id="about">
       <div class="sec-wrapper img">
         <div class="sec-inner">
@@ -90,7 +97,7 @@
                 </p>
               </div>
             </div>
-            <div class="author-image" data-aos="fade-left" data-aos-duration="1200"data-aos-offset="200" data-aos-easing="ease-in-ease-out">
+            <div class="author-image" data-aos="fade-right" data-aos-duration="1200" data-aos-offset="200" data-aos-easing="ease-in-ease-out">
               <img src="img/author-img.png" alt="サイト作成者の顔写真です">
               <!-- <img src="img/no-image.jpg" alt=""> -->
             </div>
@@ -151,57 +158,58 @@
 
     <section id="works">
       <div class="sec-wrapper">
-        <div class="title-box">
-          <h2 class="sec-title">works</h2>
-          <p class="sub-title">実績紹介</p>
+        <div class="sec-inner">
+          <div class="title-box">
+            <h2 class="sec-title">works</h2>
+            <p class="sub-title">実績紹介</p>
+          </div>
+          <ul class="works-list flex-item">
+            <li class="item-list">
+              <a href="#">
+                <img src="img/SYPF-screenshot.png" alt="このサイトのスクリーンショットです" class="surface">
+                <dl>
+                  <dt>&laquo;Title&raquo;</dt>
+                  <dd>Satoshi Yoshimura's Portfolio</dd>
+                  <dt>&laquo;Skills&raquo;</dt>
+                  <dd>HTML/CSS/jQuery</dd>
+                  <dt>&laquo;Description&raquo;</dt>
+                  <dd>私自身の紹介サイトです</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="item-list">
+              <a href="#">
+                <img src="img/sneakers-screenshot.png" alt="架空のスニーカー紹介サイトです" class="surface">
+                <dl>
+                  <dt>&laquo;Title&raquo;</dt>
+                  <dd>Sneakers</dd>
+                  <dt>&laquo;Skills&raquo;</dt>
+                  <dd>HTML/CSS/jQuery</dd>
+                  <dt>&laquo;Description&raquo;</dt>
+                  <dd>架空のストアHPです</dd>
+                </dl>
+              </a>
+            </li>
+            <li class="item-list">
+              <a href="#">
+                <img src="img/gokurakutei-screenshot.png" alt="架空の温泉宿のHPのスクリーンショットです" class="surface">
+                <dl>
+                  <dt>&laquo;Title&raquo;</dt>
+                  <dd>極楽亭</dd>
+                  <dt>&laquo;Skills&raquo;</dt>
+                  <dd>HTML/CSS/jQuery<br>WordPress</dd>
+                  <dt>&laquo;Description&raquo;</dt>
+                  <dd>架空の旅館の紹介ページです</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="works-list flex-item">
-          <li class="item-list">
-            <a href="#">
-              <img src="img/SYPF-screenshot.png" alt="このサイトのスクリーンショットです" class="surface">
-              <dl>
-                <dt>&laquo;Title&raquo;</dt>
-                <dd>Satoshi Yoshimura's Portfolio</dd>
-                <dt>&laquo;Skills&raquo;</dt>
-                <dd>HTML/CSS/jQuery</dd>
-                <dt>&laquo;Description&raquo;</dt>
-                <dd>私自身の紹介サイトです</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="item-list">
-            <a href="#">
-              <img src="img/sneakers-screenshot.png" alt="架空のスニーカー紹介サイトです" class="surface">
-              <dl>
-                <dt>&laquo;Title&raquo;</dt>
-                <dd>Sneakers</dd>
-                <dt>&laquo;Skills&raquo;</dt>
-                <dd>HTML/CSS/jQuery</dd>
-                <dt>&laquo;Description&raquo;</dt>
-                <dd>架空のストアHPです</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="item-list">
-            <a href="#">
-              <img src="img/gokurakutei-screenshot.png" alt="架空の温泉宿のHPのスクリーンショットです" class="surface">
-              <dl>
-                <dt>&laquo;Title&raquo;</dt>
-                <dd>極楽亭</dd>
-                <dt>&laquo;Skills&raquo;</dt>
-                <dd>HTML/CSS/jQuery<br>WordPress</dd>
-                <dt>&laquo;Description&raquo;</dt>
-                <dd>架空の旅館の紹介ページです</dd>
-              </dl>
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
 
     <section id="service">
-      <div class="sec-wrapper img">
-        <div class="sec-inner">
+      <div class="sec-wrapper">
           <div class="title-box right">
             <h2 class="sec-title">service</h2>
             <p class="sub-title">業務内容</p>
@@ -281,33 +289,38 @@
 
     <section id="contact">
       <div class="sec-wrapper">
-        <div class="title-box">
-          <h2 class="sec-title">contact</h2>
-          <p class="sub-title">お問い合わせ</p>
-        </div>
-        <div class="sec-contents flex-item">
-          <div class="flex-left">
-            <p class="sec-text">
-              お問い合わせは下記フォームからお気軽にどうぞ。<br>
-              お見積もりは無料となっておりますので、<br>
-              ご不明な点等ございましたら、<br>
-              まずはお気軽にお問い合わせください。
-            </p>
-            <div class="link-btn">
-              <a href="#!">contact</a>
-            </div>
+        <div class="sec-inner">
+          <div class="title-box">
+            <h2 class="sec-title">contact</h2>
+            <p class="sub-title">お問い合わせ</p>
           </div>
-          <div class="sec-img contact img">
-            <img src="img/contact-image.jpg" alt="contact-img">
+          <div class="sec-contents flex-item">
+            <div class="flex-left">
+              <p class="sec-text">
+                お問い合わせは下記フォームからお気軽にどうぞ。<br>
+                お見積もりは無料となっておりますので、<br>
+                ご不明な点等ございましたら、<br>
+                まずはお気軽にお問い合わせください。
+              </p>
+              <div class="link-btn">
+                <a href="#!">contact</a>
+              </div>
+            </div>
+            <div class="sec-img contact img">
+              <img src="img/contact-image.jpg" alt="contact-img">
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <!-- /main -->
 
+  <!-- footer -->
   <footer id="footer">
     <p>&copy;Satoshi Yoshimura's Portfolio</p>
   </footer>
+  <!-- /footer -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
