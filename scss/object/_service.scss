@@ -2,76 +2,71 @@
 /* service
 /* ------------------- */
 #service {
+  background-color: rgba($color: cl(base), $alpha: .8);
+  padding: 60px 5vw;
   .sec-wrapper {
-    padding: 60px 5vw;
+    width: 100%;
+    background-color: rgba($color: cl(beige), $alpha: 1);
+    .service-list {
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
-    .sec-inner {
-      height: 100%;
-      width: 100%;
-      background-color: rgba($color: cl(beige), $alpha: .95);
-      padding: 40px 3vw;
-      position: relative;
+      .list-item {
+        width: 31%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
 
-      .service-list {
-        justify-content: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
 
-        .list-item {
-          width: 31%;
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: flex-end;
-
-          &:not(:last-child) {
-            margin-right: 10px;
+        .price-box {
+          text-align: center;
+          .price {
+            font-size: 2rem;
+            margin-bottom: 15px;
           }
-
-          .price-box {
-            text-align: center;
-            .price {
-              font-size: 2rem;
-              margin-bottom: 15px;
-            }
-            p {
-              font-size: 1.8rem;
-            }
-          }
-
-          .text-box {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            .item-title {
-              text-align: center;
-              font-size: 2.8rem;
-              margin-bottom: 20px;
-              text-transform: capitalize;
-              &.wp {
-                line-height: 4.2rem;
-              }
-            }
-
-            .item-text {
-              font-size: 1.6rem;
-              // min-height: 180px;
-            }
-          }
-
-          .service-img {
-            height: 100px;
-            width: 100px;
-            margin: 0 auto 20px;
+          p {
+            font-size: 1.8rem;
           }
         }
-        .link-btn {
-          &.right {
-            text-align: right;
+
+        .text-box {
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          .item-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            &.wp {
+              line-height: 4.2rem;
+            }
           }
+
+          .item-text {
+            font-size: 1.6rem;
+            // min-height: 180px;
+          }
+        }
+
+        .service-img {
+          height: 100px;
+          width: 100px;
+          margin: 0 auto 20px;
         }
       }
-      .link-btn {
-        &.right {
-          text-align: right;
+    }
+    .link-btn {
+      &.right {
+        text-align: right;
+      }
+      a {
+        background-color: cl(primary);
+        &:hover {
+          background-color: cl(base);
         }
       }
     }
