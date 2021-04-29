@@ -11,9 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="js/main.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +25,7 @@
       <nav id="nav" class="hidden-menu">
         <ul class="nav-list">
           <li class="nav-item logo">
-            <img src="img/sy-logo.png" alt="">
+            <img src="img/sy-logo.png" alt="このサイトのロゴマーク">
           </li>
           <li class="nav-item"><a href="#!">about me</a></li>
           <li class="nav-item"><a href="#!">concept</a></li>
@@ -52,7 +50,7 @@
   <main id="main">
     <div class="fv">
       <div class="fv-img img">
-        <img src="img/fv-image.jpg" alt="first-view-img">
+        <img src="img/fv-image.jpg" alt="ビールとビーチ">
       </div>
       <div class="fv-bg-black centering">
         <div class="fv-copy">
@@ -71,12 +69,12 @@
     <section id="about">
       <div class="sec-wrapper img">
         <div class="sec-inner">
+          <div class="title-box">
+            <h2 class="sec-title">about me</h2>
+            <p class="sub-title">自己紹介</p>
+          </div>
           <div class="flex-item">
             <div class="flex-left">
-              <div class="title-box">
-                <h2 class="sec-title">about me</h2>
-                <p class="sub-title">自己紹介</p>
-              </div>
               <div class="sec-text about">
                 <p>
                   はじめまして。WEB制作をしております、<span class="name">Satoshi</span>と申します。
@@ -91,14 +89,14 @@
                   個人営業や法人営業の経験で培った、丁寧なコミュニケーションと、クライアントに寄り添った対応で、最後まで責任を持って業務に取り組ませていただきます。
                 </p>
               </div>
-              <div class="link-btn">
-                <a href="#!">contact</a>
-              </div>
             </div>
-            <div class="author-image centering">
-              <img src="img/author-img.png" alt="">
+            <div class="author-image" data-aos="fade-left" data-aos-duration="1200"data-aos-offset="200" data-aos-easing="ease-in-ease-out">
+              <img src="img/author-img.png" alt="サイト作成者の顔写真です">
               <!-- <img src="img/no-image.jpg" alt=""> -->
             </div>
+          </div>
+          <div class="link-btn">
+            <a href="#!">contact</a>
           </div>
         </div>
       </div>
@@ -120,8 +118,8 @@
                   ご不明点など、お気軽にお申し付けください。
                 </p>
               </div>
-              <div class="concept-img">
-                <img src="img/Q&A-icon.png" alt="">
+              <div class="concept-img" data-aos="zoom-out" data-aos-duration="1000">
+                <img src="img/Q&A-icon.png" alt="QアンドAのアイコン">
               </div>
             </li>
             <li class="list-item">
@@ -131,8 +129,8 @@
                   アッと驚く物を作るのではなく、お客様のご要望をしっかり<span>ヒアリング</span>し、丁寧なコミュニケーションを心がけ、希望に沿った<span>ご提案</span>をいたします。
                 </p>
               </div>
-              <div class="concept-img">
-                <img src="img/checksheet-icon.png" alt="">
+              <div class="concept-img" data-aos="zoom-out" data-aos-duration="1000">
+                <img src="img/checksheet-icon.png" alt="チェックシートのアイコン">
               </div>
             </li>
             <li class="list-item">
@@ -143,8 +141,8 @@
                   イメージは<span>「Web制作のユニクロ」</span>です。
                 </p>
               </div>
-              <div class="concept-img">
-                <img src="img/money-icon.png" alt="">
+              <div class="concept-img" data-aos="zoom-out" data-aos-duration="1000">
+                <img src="img/money-icon.png" alt="お金のアイコン">
               </div>
             </li>
           </ul>
@@ -155,11 +153,47 @@
       <div class="sec-wrapper">
         <div class="title-box">
           <h2 class="sec-title">works</h2>
-          <p class="sub-title">実績</p>
+          <p class="sub-title">実績紹介</p>
         </div>
         <ul class="works-list flex-item">
           <li class="item-list">
-            <a href="#"></a>
+            <a href="#">
+              <img src="img/SYPF-screenshot.png" alt="このサイトのスクリーンショットです" class="surface">
+              <dl>
+                <dt>&laquo;Title&raquo;</dt>
+                <dd>Satoshi Yoshimura's Portfolio</dd>
+                <dt>&laquo;Skills&raquo;</dt>
+                <dd>HTML/CSS/jQuery</dd>
+                <dt>&laquo;Description&raquo;</dt>
+                <dd>私自身の紹介サイトです</dd>
+              </dl>
+            </a>
+          </li>
+          <li class="item-list">
+            <a href="#">
+              <img src="img/sneakers-screenshot.png" alt="架空のスニーカー紹介サイトです" class="surface">
+              <dl>
+                <dt>&laquo;Title&raquo;</dt>
+                <dd>Sneakers</dd>
+                <dt>&laquo;Skills&raquo;</dt>
+                <dd>HTML/CSS/jQuery</dd>
+                <dt>&laquo;Description&raquo;</dt>
+                <dd>架空のストアHPです</dd>
+              </dl>
+            </a>
+          </li>
+          <li class="item-list">
+            <a href="#">
+              <img src="img/gokurakutei-screenshot.png" alt="架空の温泉宿のHPのスクリーンショットです" class="surface">
+              <dl>
+                <dt>&laquo;Title&raquo;</dt>
+                <dd>極楽亭</dd>
+                <dt>&laquo;Skills&raquo;</dt>
+                <dd>HTML/CSS/jQuery<br>WordPress</dd>
+                <dt>&laquo;Description&raquo;</dt>
+                <dd>架空の旅館の紹介ページです</dd>
+              </dl>
+            </a>
           </li>
         </ul>
       </div>
@@ -191,7 +225,7 @@
                   </p>
                 </div>
               </div>
-              <div class="service-img">
+              <div class="service-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                 <img src="img/coding-icon.png" alt="">
               </div>
             </li>
@@ -211,7 +245,7 @@
                   </p>
                 </div>
               </div>
-              <div class="service-img">
+              <div class="service-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                 <img src="img/hp-icon.png" alt="">
               </div>
             </li>
@@ -233,35 +267,39 @@
                   </p>
                 </div>
               </div>
-              <div class="service-img">
+              <div class="service-img" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                 <img src="img/wp-icon-img(tblue).png" alt="">
               </div>
             </li>
           </ul>
           <div class="link-btn right">
-            <a href="#!">contact</a>
+            <a href="#!">無料相談・お見積もり</a>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="sec-wrapper flex-item">
-        <div class="sec-contents">
-          <div class="title-box">
-            <h2 class="sec-title">contact</h2>
-            <p class="sub-title">お問い合わせ</p>
-          </div>
-          <p class="sec-text">
-            お問い合わせは下記フォームからお気軽にどうぞ。<br>
-            お見積もりは無料となっておりますので、ご不明な点等ございましたら、まずはお気軽にお問い合わせください。<br>
-          </p>
-          <div class="link-btn">
-            <a href="#!">contact</a>
-          </div>
+      <div class="sec-wrapper">
+        <div class="title-box">
+          <h2 class="sec-title">contact</h2>
+          <p class="sub-title">お問い合わせ</p>
         </div>
-        <div class="sec-img contact img">
-          <img src="img/contact-image.jpg" alt="contact-img">
+        <div class="sec-contents flex-item">
+          <div class="flex-left">
+            <p class="sec-text">
+              お問い合わせは下記フォームからお気軽にどうぞ。<br>
+              お見積もりは無料となっておりますので、<br>
+              ご不明な点等ございましたら、<br>
+              まずはお気軽にお問い合わせください。
+            </p>
+            <div class="link-btn">
+              <a href="#!">contact</a>
+            </div>
+          </div>
+          <div class="sec-img contact img">
+            <img src="img/contact-image.jpg" alt="contact-img">
+          </div>
         </div>
       </div>
     </section>
@@ -270,5 +308,13 @@
   <footer id="footer">
     <p>&copy;Satoshi Yoshimura's Portfolio</p>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
