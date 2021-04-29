@@ -1,0 +1,89 @@
+// responsive tab size
+@media only screen and(max-width: 767px) {
+  /* ------------------- */
+  /* common
+  /* ------------------- */
+  .title-box {
+    flex-direction: column;
+    margin-bottom: 25px;
+    .sec-title {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    .sub-title {
+      font-size: 1.6rem;
+    }
+    &.right {
+      display: block;
+      text-align: right;
+      .sub-title {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .link-btn {
+    a {
+      width: 240px;
+      line-height: 52px;
+      font-size: 1.8rem;
+    }
+  }
+
+  /* ------------------- */
+  /* header
+  /* ------------------- */
+  #header {
+
+    .header-inner {
+      padding: 20px 4vw;
+
+      #nav {
+        right: -100%;
+        width: 100%;
+
+        .nav-list {
+          .logo {
+            margin-bottom: 50px;
+          }
+
+          .nav-item {
+            margin-bottom: 45px;
+
+            a {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ------------------- */
+  /* first-view
+  /* ------------------- */
+  .fv {
+    
+  }
+
+  /* ------------------- */
+  /* about
+  /* ------------------- */
+
+
+  /* ------------------- */
+  /* contact
+  /* ------------------- */
+  #contact {
+    .sec-wrapper {
+      .sec-inner {
+        .sec-contents {
+          flex-direction: column;
+
+          .sec-img {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
