@@ -1,9 +1,9 @@
 #concept {
-  background-color: cl(beige);
+  background-color: rgba($color: cl(base), $alpha: .8);
   padding: 60px 5vw;
   .sec-wrapper {
     width: 100%;
-    background-color: lightgray;
+    background-color: rgba($color: cl(beige), $alpha: 1);
     .concept-list {
       justify-content: center;
       padding-top: 20px;
@@ -23,7 +23,7 @@
             margin-bottom: 20px;
           }
           .item-text {
-            font-size: 2rem;
+            font-size: 1.6rem;
             span {
               text-decoration: underline;
             }
