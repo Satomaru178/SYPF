@@ -2,7 +2,7 @@
 /* footer
 /* ------------------- */
 #footer {
-  background-color: cl(base);
+  background-color: rgba($color: cl(base), $alpha: .8);
   text-align: center;
   padding: 20px 0;
   color: cl(white);
