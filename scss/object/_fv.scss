@@ -3,48 +3,53 @@
 /* ------------------- */
 .fv {
   height: 100vh;
-  max-height: 740px;
-  min-height: 640px;
-  width: 100%;
-  position: relative;
-  background-color: cl(beige);
-  box-sizing: content-box;
-
-  .fv-img {
-    width: percentage(1100px / 1440px);
-    max-width: 1100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-
-  .fv-bg-black {
-    width: percentage(780px / 1440px);
-    min-width: 600px;
-    height: 100%;
-    max-height: 740px;
-    min-height: 500px;
-    background-color: cl(base);
+  background-color: rgba($color: cl(beige), $alpha: .95);
+  z-index: -2;
+  &:after {
+    content: "";
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
+    background-color: cl(base);
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+  }
+  .bg-wrapper {
+    position: relative;
+    height: percentage(640px / 740px);
+    width: percentage(1100px / 1440px);
+    background-image: url(/img/fv-image.jpg);
+    background-size: cover;
+    background-position: center 0;
+    z-index: 2;
+    .fv-copy {
+      color: cl(beige);
+      z-index: 3;
+      text-transform: uppercase;
+      text-shadow: 2px 3px 4px cl(base);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%);
+
+      .copy-small {
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
+      .copy-mid {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .copy-big {
+        font-size: 7.2rem;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+    }
   }
 
-  .fv-copy {
-    color: #fff;
-    z-index: 3;
-    text-transform: uppercase;
 
-    .copy-small {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .copy-big {
-      font-size: 7.2rem;
-      font-weight: 800;
-    }
-  }
 }
