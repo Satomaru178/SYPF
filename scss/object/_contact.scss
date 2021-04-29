@@ -3,25 +3,23 @@
 /* ------------------- */
 #contact {
   background-color: cl(beige);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   .sec-wrapper {
     padding: 60px 15vw;
 
     .sec-contents {
-      width: 50%;
-      padding-right: 80px;
-      font-size: 1.6rem;
-
-      .sec-text {
-        line-height: 2;
-        letter-spacing: normal;
+      // align-items: center;
+      .flex-left {
+        width: 80%;
+        margin-right: 40px;
+        font-size: 2rem;
+        .sec-text {
+          line-height: 2;
+          letter-spacing: normal;
+        }
       }
-    }
 
-    .sec-img {
-      height: 390px;
-      width: 580px;
     }
   }
 }
