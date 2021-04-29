@@ -1,0 +1,95 @@
+// responsive tab size
+@media only screen and(max-width: 1024px) {
+  /* ------------------- */
+  /* common
+  /* ------------------- */
+  .link-btn {
+    a {
+      width: 220px;
+      line-height: 48px;
+      font-size: 1.6rem;
+    }
+  }
+  /* ------------------- */
+  /* header
+  /* ------------------- */
+  #header {
+    top: 0;
+    .header-inner {
+      padding: 20px 5vw;
+      .header-logo {
+        a {
+          font-size: 2.4rem;
+        }
+      }
+      #nav {
+        right: -480px;
+        width: 480px;
+        .nav-list {
+          .logo {
+            margin-bottom: 45px;
+            img {
+              height: 40px;
+              width: 40px;
+            }
+          }
+          .nav-item {
+            margin-bottom: 40px;
+            a {
+              font-size: 2.2rem;
+            }
+          }
+        }
+      }
+
+      .menu-btn {
+        .burger-menu {
+          width: 30px;
+          height: 20px;
+          span {
+            width: 30px;
+            &:nth-child(2),
+            &:nth-child(3) {
+              top: 9px;
+            }
+          }
+        }
+        .menu-text {
+          font-size: 1.2rem;
+          .only-pc {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  /* ------------------- */
+  /* first-view
+  /* ------------------- */
+  .fv {
+    .bg-wrapper {
+      background-image: url(/img/fv-image-tab.jpg);
+      background-size: fill;
+      .fv-copy {
+        .copy-big {
+          font-size: 5.6rem;
+        }
+      }
+    }
+  }
+  /* ------------------- */
+  /* contact
+  /* ------------------- */
+  #contact {
+    .sec-wrapper {
+      .sec-inner {
+        .sec-contents {
+          flex-direction: column;
+          .sec-img {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
