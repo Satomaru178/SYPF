@@ -1,11 +1,16 @@
 @import "foundation/base";
 @import "foundation/general";
+
 @import "layout/common";
-@import "layout/footer";
 @import "layout/header";
+@import "layout/footer";
+
 @import "object/about";
 @import "object/concept";
 @import "object/contact";
 @import "object/fv";
 @import "object/service";
 @import "object/works";
+
+@import "layout/tab";
+@import "layout/sp";
