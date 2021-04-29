@@ -2,13 +2,13 @@
 /* first-view
 /* ------------------- */
 .fv {
-  height: 800px;
-  max-height: 800px;
+  height: 100vh;
+  max-height: 740px;
+  min-height: 640px;
   width: 100%;
   position: relative;
   background-color: cl(beige);
   box-sizing: content-box;
-  padding-bottom: 60px;
 
   .fv-img {
     width: percentage(1100px / 1440px);
