@@ -9,13 +9,17 @@
       height: 100%;
       width: 100%;
       background-color: rgba($color: cl(beige), $alpha: .95);
-      padding: 40px 10vw;
+      padding: 40px 5vw;
       position: relative;
 
       .flex-item {
+        align-items: center;
         .flex-left {
           width: 60%;
           margin-right: 20px;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: space-between;
           .about {
             line-height: 1.7;
             font-size: 1.6rem;
@@ -28,10 +32,12 @@
               }
             }
           }
+          .link-btn {
+            margin-top: 20px;
+          }
         }
 
         .author-image {
-          margin: 0 auto;
           flex: 1;
           text-align: center;
           img {
