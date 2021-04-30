@@ -5,7 +5,7 @@
     ハンバーガーメニュー
     ===================================================*/
     $('.menu-btn').on('click', function () {
-      $('.burger-menu, #nav, #mask').toggleClass('open');
+      $('.burger-menu, #nav, #musk').toggleClass('open');
     });
 
     /*=================================================
@@ -22,19 +22,19 @@
     /*=================================================
     スクロール後のヘッダーメニュー固定
     ===================================================*/
-    var $win = $(window),
-    $header = $('#header'),
-    headerPos = $header.offset().top,
-    fixedClass = 'fix';
+    // var $win = $(window),
+    // $header = $('#header'),
+    // headerPos = $header.offset().top,
+    // fixedClass = 'fix';
 
-    $win.on('load scroll', function () {
-      var value = $(this).scrollTop();
-      if (value > headerPos) {
-        $header.addClass(fixedClass);
-      } else {
-        $header.removeClass(fixedClass);
-      }
-    });
+    // $win.on('load scroll', function () {
+    //   var value = $(this).scrollTop();
+    //   if (value > headerPos) {
+    //     $header.addClass(fixedClass);
+    //   } else {
+    //     $header.removeClass(fixedClass);
+    //   }
+    // });
 
     /*=================================================
     スクロール後のヘッダーメニュー変化
