@@ -14,17 +14,13 @@
   /* header
   /* ------------------- */
   #header {
-    top: 0;
     .header-inner {
-      padding: 20px 5vw;
       .header-logo {
         a {
           font-size: 2.4rem;
         }
       }
       #nav {
-        right: -480px;
-        width: 480px;
         .nav-list {
           .logo {
             margin-bottom: 45px;
@@ -44,10 +40,8 @@
 
       .menu-btn {
         .burger-menu {
-          width: 30px;
           height: 20px;
           span {
-            width: 30px;
             &:nth-child(2),
             &:nth-child(3) {
               top: 9px;
@@ -69,10 +63,31 @@
   .fv {
     .bg-wrapper {
       background-image: url(/img/fv-image-tab.jpg);
-      background-size: fill;
       .fv-copy {
         .copy-big {
           font-size: 5.6rem;
+        }
+      }
+    }
+  }
+
+  /* ------------------- */
+  /* works
+  /* ------------------- */
+  #works {
+    .sec-wrapper {
+      .sec-inner {
+        .works-list {
+          .list-item {
+            a {
+              dl {
+                &::before,
+                &::after {
+                  display: none;
+                }
+              }
+            }
+          }
         }
       }
     }
