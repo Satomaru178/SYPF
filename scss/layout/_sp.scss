@@ -1,4 +1,4 @@
-// responsive tab size
+// responsive sp size
 @media only screen and(max-width: 767px) {
   /* ------------------- */
   /* common
@@ -21,7 +21,8 @@
       }
     }
   }
-  .link-btn {
+  .link-btn,
+  .link-btn.right {
     a {
       width: 240px;
       line-height: 52px;
@@ -33,24 +34,20 @@
   /* header
   /* ------------------- */
   #header {
-
     .header-inner {
-      padding: 20px 4vw;
+      .header-logo {
+        a {
+          font-size: 2.8rem;
+        }
+      }
 
       #nav {
-        right: -100%;
-        width: 100%;
-
+        width: 70%;
         .nav-list {
-          .logo {
-            margin-bottom: 50px;
-          }
-
           .nav-item {
             margin-bottom: 45px;
-
             a {
-              font-size: 2.5rem;
+              font-size: 2.4rem;
             }
           }
         }
@@ -62,23 +59,127 @@
   /* first-view
   /* ------------------- */
   .fv {
-    
+    .bg-wrapper {
+      background-image: url(/img/fv-image-sp.jpg);
+      .fv-copy {
+        right: -20%;
+        transform: translate(0, -50%);
+        .copy-small,
+        .copy-mid {
+          font-size: 1.6rem;
+        }
+        .copy-big {
+          font-size: 5.6rem;
+        }
+      }
+    }
   }
 
   /* ------------------- */
   /* about
   /* ------------------- */
+  #about {
+    .sec-wrapper {
+      .sec-inner {
+        .flex-item {
+          flex-direction: column-reverse;
+          .flex-left {
+            width: 100%;
+            margin: 0;
+          }
+        }
+        .author-image {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  /* ------------------- */
+  /* contact
+  /* ------------------- */
+  #concept {
+    .sec-wrapper {
+      .concept-list {
+        flex-direction: column;
+        .list-item {
+          width: 100%;
+          &.first-item {
+            margin-bottom: 30px;
+          }
+          &:not(:last-of-type) {
+            margin-bottom: 40px;
+          }
+          .text-box {
+            width: 70%;
+            margin: 0 auto;
+            line-height: 2;
+            .item-title {
+              font-size: 2.2rem;
+              margin-bottom: 10px;
+            }
+          }
+          .concept-img {
+            height: 80px;
+            width: 80px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
 
+  /* ------------------- */
+  /* works
+  /* ------------------- */
+  #works {
+    .sec-wrapper {
+      .sec-inner {
+        .works-list {
+          flex-direction: column;
+          .first-item {
+            width: 50%;
+            margin: 0 auto 25px;
+          }
+        }
+      }
+    }
+  }
+  /* ------------------- */
+  /* service
+  /* ------------------- */
+  #service {
+    .sec-wrapper {
+      .service-list {
+        flex-direction: column;
+        .list-item {
+          &.first-item {
+            margin-bottom: 30px;
+            padding: 0 20px;
+          }
+        }
+        .flex-two {
+          padding: 0 15px;
+          .list-item {
+            width: 45%;
+          }
+        }
+      }
+    }
+  }
 
   /* ------------------- */
   /* contact
   /* ------------------- */
   #contact {
+    margin-bottom: 0;
     .sec-wrapper {
+      padding: 30px 5vw;
       .sec-inner {
         .sec-contents {
           flex-direction: column;
-
+          .flex-left {
+            width: 100%;
+          }
           .sec-img {
             margin-top: 30px;
           }
