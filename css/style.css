@@ -408,6 +408,7 @@ li {
 }
 
 #about .sec-wrapper .sec-inner .flex-item .author-image img {
+  border-radius: 50%;
   min-width: 200px;
   max-width: 300px;
   border-radius: 50%;
@@ -663,6 +664,11 @@ li {
 
 #service .sec-wrapper .link-btn a:hover {
   background-color: #011526;
+}
+
+#service .sec-wrapper .add_comment {
+  text-align: right;
+  margin-top: 30px;
 }
 
 /* ------------------- */
