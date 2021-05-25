@@ -692,94 +692,23 @@ li {
 }
 
 #works .sec-wrapper .sec-inner .works-list .list-item {
-  position: relative;
-  overflow: hidden;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #works .sec-wrapper .sec-inner .works-list .list-item a {
-  display: inline-block;
-  color: #fff;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item a dl {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 20px;
-  background: rgba(78, 141, 166, 0.95);
-  overflow: hidden;
-  background: transparent;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item a dl::before, #works .sec-wrapper .sec-inner .works-list .list-item a dl::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: rgba(78, 141, 166, 0.95);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: opacity 0.3s, -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: opacity 0.3s, transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: opacity 0.3s, transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item a dl::before {
-  left: 0;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item a dl::after {
-  right: 0;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item a dl dt,
-#works .sec-wrapper .sec-inner .works-list .list-item a dl dd {
-  position: relative;
-  z-index: 1;
-  -webkit-transition: opacity .3s .3s;
-  transition: opacity .3s .3s;
+  color: #333333;
 }
 
 #works .sec-wrapper .sec-inner .works-list .list-item a dl dt {
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 2rem;
 }
 
-#works .sec-wrapper .sec-inner .works-list .list-item a dl dd {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-  text-align: right;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item a dl dd.center {
-  text-align: center;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item:not(:hover) dd,
-#works .sec-wrapper .sec-inner .works-list .list-item:not(:hover) dt {
-  opacity: 0;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item:not(:hover) dl::before, #works .sec-wrapper .sec-inner .works-list .list-item:not(:hover) dl::after {
-  opacity: 0;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item:not(:hover) dl::before {
-  -webkit-transform: translateX(-175px) skew(-30deg);
-          transform: translateX(-175px) skew(-30deg);
-}
-
-#works .sec-wrapper .sec-inner .works-list .list-item:not(:hover) dl::after {
-  -webkit-transform: translateX(275px) skew(-30deg);
-          transform: translateX(275px) skew(-30deg);
+#works .sec-wrapper .sec-inner .works-list .list-item:hover {
+  opacity: .8;
 }
 
 @media only screen and (max-width: 1024px) {
